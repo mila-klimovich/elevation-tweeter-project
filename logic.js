@@ -75,53 +75,18 @@ const Tweeter = function () {
 
 }
 
-const tweeter = Tweeter();
+// const tweeter = Tweeter();
 
-    // console.log(_posts);
-    // console.log(tweeter.postIdCounter);
-    // console.log(tweeter.commentIdCounter);
-    // console.log(tweeter.getPosts());
-    // tweeter.addPost('whats up');
-    // tweeter.addPost('blah blah blah');
-    // tweeter.addPost('pew pew pew');
-    // console.log(tweeter.getPosts());
-    // tweeter.removePost('p4');
-    // console.log(tweeter.getPosts());
-    // tweeter.addComment('p3', 'privet');
-    // console.log(tweeter.getPosts());
-    // tweeter.removeComment('p1', 'c2');
-    // console.log(tweeter.getPosts());
+// tweeter.addPost("This is my own post!");
+// console.log(tweeter.getPosts());
 
-    // const tweeter = Tweeter()
+// tweeter.removePost("p1");
+// console.log(tweeter.getPosts());
 
-tweeter.addPost("This is my own post!")
-console.log(tweeter.getPosts())
-//This should be added to the posts array:
-//{text: "This is my own post!", id: "p3", comments: []}
+// tweeter.addComment("p3","Damn straight it is!");
+// tweeter.addComment("p2","Second the best!");
+// console.log(tweeter.getPosts());
 
-tweeter.removePost("p1")
-console.log(tweeter.getPosts())
-//There should only be two posts in the post's array:
-//{text: "Aw man, I wanted to be first", id: "p2", comments: Array(3)}
-//{text: "This is my own post!", id: "p3", comments: []}
 
-//============================
-//============================
-//Stop here
-//Make sure everything works. Then keep going
-//============================
-//============================
-
-tweeter.addComment("p3","Damn straight it is!")
-tweeter.addComment("p2","Second the best!")
-console.log(tweeter.getPosts())
-//This should be added to the third post's comments array:
-//{id: "c7", text: "Damn straight it is!"}
-
-//This should be added to the second post's comments array:
-//{id: "c8", text: "Second the best!"}
-
-tweeter.removeComment("p2", "c6")
-console.log(tweeter.getPosts())
-//This comment should be removed:
-//{id: "c6", text: "Haha second place what a joke."}
+// tweeter.removeComment("p2", "c6");
+// console.log(tweeter.getPosts());
