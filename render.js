@@ -15,14 +15,29 @@ const Renderer = function () {
                 const thisComment = $("<div>").addClass("comment").attr("data-id", comment.id);
                 const commentText = $("<span>").text(comment.text);
 
-                // const deleteCommentBtn = $("<span>").addClass("delete-comment").text("X");
+                const deleteCommentBtn = $("<span>").addClass("delete-comment").text("X");
 
-                thisComment.append(commentText);
-                // append(commentText, deleteCommentBtn);
+                thisComment.append(deleteCommentBtn, commentText);
                 commentsContainer.append(thisComment);
             });
 
-            thisPost.append(postText, commentsContainer);
+            const inputContainer = $("<div>").addClass("input-container");
+            const inputComment = $("<input>")
+                .attr("type", "text")
+                .attr("placeholder", "Got something to say?")
+                .addClass("input-comment");;
+            const btnComment = $("<button>").text("Comment").addClass("post-comment");
+
+            inputContainer.append(inputComment, btnComment);
+
+            const deleteBtn = $("<button>").text("Delete Post").addClass("delete");
+
+            thisPost.append(
+                postText,
+                commentsContainer,
+                inputContainer,
+                deleteBtn
+            );
             postsContainer.append(thisPost);
         })
 

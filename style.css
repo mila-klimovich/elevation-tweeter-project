@@ -68,9 +68,20 @@ body {
     padding: 5px;
     border-radius: 3px;
     font-size: 0.8em;
+    margin: 15px 0;
+    
 }
 
 .delete-comment {
     cursor: pointer;
     color: #e74c3c;
+    margin: 3px;
+}
+
+.input-container {
+    margin-left: 10px;
+}
+
+.post-comment {
+    margin-left: 3px;
 }
